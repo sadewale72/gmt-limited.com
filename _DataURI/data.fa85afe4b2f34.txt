@@ -1,0 +1,1 @@
+chrome-extension://lknmjhcajhfbbglglccadlfdjbaiifig/scripts/multi-tabs-interface.script.js

@@ -1,0 +1,1246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home - GMT (Nig.) Limited </title>
+    <link rel="stylesheet" href="https://gmt-limited.com/wp-content/themes/GMT/style.css" type="text/css" media="screen" />
+    <link rel="pingback" href="https://gmt-limited.com/xmlrpc.php" />
+    <meta name='robots' content='max-image-preview:large' />
+
+    <!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <link rel="canonical" href="https://gmt-limited.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - GMT (Nig.) Limited" />
+    <meta property="og:url" content="https://gmt-limited.com/" />
+    <meta property="og:site_name" content="GMT (Nig.) Limited" />
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://gmt-limited.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://gmt-limited.com/?s={search_term}",
+                "query-input": "required name=search_term"
+            }
+        }
+    </script>
+    <!-- / Yoast WordPress SEO plugin. -->
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="GMT (Nig.) Limited &raquo; Feed" href="https://gmt-limited.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="GMT (Nig.) Limited &raquo; Comments Feed" href="https://gmt-limited.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "wpemoji": "https:\/\/gmt-limited.com\/wp-includes\/js\/wp-emoji.js?ver=5.9.7",
+                "twemoji": "https:\/\/gmt-limited.com\/wp-includes\/js\/twemoji.js?ver=5.9.7"
+            }
+        };
+        /**
+         * @output wp-includes/js/wp-emoji-loader.js
+         */
+
+        (function(window, document, settings) {
+            var src, ready, ii, tests;
+
+            // Create a canvas element for testing native browser support of emoji.
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext && canvas.getContext('2d');
+
+            /**
+             * Checks if two sets of Emoji characters render the same visually.
+             *
+             * @since 4.9.0
+             *
+             * @private
+             *
+             * @param {number[]} set1 Set of Emoji character codes.
+             * @param {number[]} set2 Set of Emoji character codes.
+             *
+             * @return {boolean} True if the two sets render the same.
+             */
+            function emojiSetsRenderIdentically(set1, set2) {
+                var stringFromCharCode = String.fromCharCode;
+
+                // Cleanup from previous test.
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.fillText(stringFromCharCode.apply(this, set1), 0, 0);
+                var rendered1 = canvas.toDataURL();
+
+                // Cleanup from previous test.
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.fillText(stringFromCharCode.apply(this, set2), 0, 0);
+                var rendered2 = canvas.toDataURL();
+
+                return rendered1 === rendered2;
+            }
+
+            /**
+             * Detects if the browser supports rendering emoji or flag emoji.
+             *
+             * Flag emoji are a single glyph made of two characters, so some browsers
+             * (notably, Firefox OS X) don't support them.
+             *
+             * @since 4.2.0
+             *
+             * @private
+             *
+             * @param {string} type Whether to test for support of "flag" or "emoji".
+             *
+             * @return {boolean} True if the browser can render emoji, false if it cannot.
+             */
+            function browserSupportsEmoji(type) {
+                var isIdentical;
+
+                if (!context || !context.fillText) {
+                    return false;
+                }
+
+                /*
+                 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+                 * it doesn't work when the font is bolder than 500 weight. So, we
+                 * check for bold rendering support to avoid invisible emoji in Chrome.
+                 */
+                context.textBaseline = 'top';
+                context.font = '600 32px Arial';
+
+                switch (type) {
+                    case 'flag':
+                        /*
+                         * Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
+                         * but has landed in Twemoji early, so we can add support for it, too.
+                         *
+                         * To test for support, we try to render it, and compare the rendering to how it would look if
+                         * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+                         */
+                        isIdentical = emojiSetsRenderIdentically(
+                            [0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F], [0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F]
+                        );
+
+                        if (isIdentical) {
+                            return false;
+                        }
+
+                        /*
+                         * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+                         * so gives us an easy test for full support.
+                         *
+                         * To test for support, we try to render it, and compare the rendering to how it would look if
+                         * the browser doesn't render it correctly ([U] + [N]).
+                         */
+                        isIdentical = emojiSetsRenderIdentically(
+                            [0xD83C, 0xDDFA, 0xD83C, 0xDDF3], [0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3]
+                        );
+
+                        if (isIdentical) {
+                            return false;
+                        }
+
+                        /*
+                         * Test for English flag compatibility. England is a country in the United Kingdom, it
+                         * does not have a two letter locale code but rather an five letter sub-division code.
+                         *
+                         * To test for support, we try to render it, and compare the rendering to how it would look if
+                         * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+                         */
+                        isIdentical = emojiSetsRenderIdentically(
+                            [0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F], [0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F]
+                        );
+
+                        return !isIdentical;
+                    case 'emoji':
+                        /*
+                         * Burning Love: Just a hunk, a hunk of burnin' love.
+                         *
+                         *  To test for Emoji 13.1 support, try to render a new emoji: Heart on Fire!
+                         *
+                         * The Heart on Fire emoji is a ZWJ sequence combining ❤️ Red Heart, a Zero Width Joiner and 🔥 Fire.
+                         *
+                         * 0x2764, 0xfe0f == Red Heart emoji.
+                         * 0x200D == Zero-Width Joiner (ZWJ) that links the two code points for the new emoji or
+                         * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+                         * 0xD83D, 0xDD25 == Fire.
+                         *
+                         * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+                         * sequence come from older emoji standards.
+                         */
+                        isIdentical = emojiSetsRenderIdentically(
+                            [0x2764, 0xfe0f, 0x200D, 0xD83D, 0xDD25], [0x2764, 0xfe0f, 0x200B, 0xD83D, 0xDD25]
+                        );
+
+                        return !isIdentical;
+                }
+
+                return false;
+            }
+
+            /**
+             * Adds a script to the head of the document.
+             *
+             * @ignore
+             *
+             * @since 4.2.0
+             *
+             * @param {Object} src The url where the script is located.
+             * @return {void}
+             */
+            function addScript(src) {
+                var script = document.createElement('script');
+
+                script.src = src;
+                script.defer = script.type = 'text/javascript';
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
+
+            tests = Array('flag', 'emoji');
+
+            settings.supports = {
+                everything: true,
+                everythingExceptFlag: true
+            };
+
+            /*
+             * Tests the browser support for flag emojis and other emojis, and adjusts the
+             * support settings accordingly.
+             */
+            for (ii = 0; ii < tests.length; ii++) {
+                settings.supports[tests[ii]] = browserSupportsEmoji(tests[ii]);
+
+                settings.supports.everything = settings.supports.everything && settings.supports[tests[ii]];
+
+                if ('flag' !== tests[ii]) {
+                    settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[ii]];
+                }
+            }
+
+            settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && !settings.supports.flag;
+
+            // Sets DOMReady to false and assigns a ready function to settings.
+            settings.DOMReady = false;
+            settings.readyCallback = function() {
+                settings.DOMReady = true;
+            };
+
+            // When the browser can not render everything we need to load a polyfill.
+            if (!settings.supports.everything) {
+                ready = function() {
+                    settings.readyCallback();
+                };
+
+                /*
+                 * Cross-browser version of adding a dom ready event.
+                 */
+                if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', ready, false);
+                    window.addEventListener('load', ready, false);
+                } else {
+                    window.attachEvent('onload', ready);
+                    document.attachEvent('onreadystatechange', function() {
+                        if ('complete' === document.readyState) {
+                            settings.readyCallback();
+                        }
+                    });
+                }
+
+                src = settings.source || {};
+
+                if (src.concatemoji) {
+                    addScript(src.concatemoji);
+                } else if (src.wpemoji && src.twemoji) {
+                    addScript(src.twemoji);
+                    addScript(src.wpemoji);
+                }
+            }
+
+        })(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://gmt-limited.com/wp-includes/css/dist/block-library/style.css?ver=5.9.7' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+    <link rel='stylesheet' id='meteor-slides-css' href='https://gmt-limited.com/wp-content/plugins/meteor-slides/css/meteor-slides.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-pagenavi-css' href='https://gmt-limited.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+    <link rel='stylesheet' id='slidedeck-css' href='https://gmt-limited.com/wp-content/plugins/slidedeck2/css/slidedeck.css?ver=2.3.10' type='text/css' media='screen' />
+    <script type="text/javascript">
+        window.slideDeck2Version = "2.3.10";
+        window.slideDeck2Distribution = "lite";
+    </script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/wp-lightbox-ultimate/lib/js/prettyPhoto.js?ver=5.9.7' id='prettyphoto-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/meteor-slides/js/jquery.cycle.all.js?ver=5.9.7' id='jquery-cycle-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/meteor-slides/js/jquery.metadata.v2.js?ver=5.9.7' id='jquery-metadata-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/meteor-slides/js/jquery.touchwipe.1.1.1.js?ver=5.9.7' id='jquery-touchwipe-js'></script>
+    <script type='text/javascript' id='meteorslides-script-js-extra'>
+        /* <![CDATA[ */
+        var meteorslidessettings = {
+            "meteorslideshowspeed": "500",
+            "meteorslideshowduration": "5000",
+            "meteorslideshowheight": "306",
+            "meteorslideshowwidth": "960",
+            "meteorslideshowtransition": "scrollHorz"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/meteor-slides/js/slideshow.js?ver=5.9.7' id='meteorslides-script-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/slidedeck2/js/jquery-mousewheel/jquery.mousewheel.min.js?ver=3.0.6' id='scrolling-js-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/slidedeck2/js/jquery.easing.1.3.js?ver=1.3' id='jquery-easing-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/slidedeck2/js/slidedeck.jquery.js?ver=1.3.9' id='slidedeck-library-js-js'></script>
+    <script type='text/javascript' src='https://gmt-limited.com/wp-content/plugins/slidedeck2/js/slidedeck-public.js?ver=2.3.10' id='slidedeck-public-js'></script>
+    <script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=1316526300' id='twitter-intent-api-js'></script>
+    <link rel="https://api.w.org/" href="https://gmt-limited.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://gmt-limited.com/wp-json/wp/v2/pages/1040" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gmt-limited.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://gmt-limited.com/wp-includes/wlwmanifest.xml" />
+
+    <link rel='shortlink' href='https://gmt-limited.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://gmt-limited.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgmt-limited.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://gmt-limited.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgmt-limited.com%2F&#038;format=xml" />
+    <script type="text/javascript">
+        WP_LIGHTBOX_VERSION = "1.4.5";
+        WP_LIGHTBOX_PLUGIN_URL = "https://gmt-limited.com/wp-content/plugins/wp-lightbox-ultimate";
+        WP_MEDIA_LB_AUTOPLAY = "false";
+    </script>
+    <link rel="stylesheet" href="https://gmt-limited.com/wp-content/plugins/wp-lightbox-ultimate/lib/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://gmt-limited.com/wp-content/plugins/wp-lightbox-ultimate/lib/css/wp_lightbox_ultimate.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://gmt-limited.com/wp-content/plugins/wp-lightbox-ultimate/wp_lightbox_ultimate_custom.css" type="text/css" media="screen" charset="utf-8" />
+    <!-- All in one Favicon 4.3 -->
+    <link rel="shortcut icon" href="https://www.gmt-limited.com/wp-content/uploads/2014/01/favicon2.ico" />
+
+    <style media="print" type="text/css">
+        div.faq_answer {
+            display: block !important;
+        }
+
+        p.faq_nav {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-1040">
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="header-holder">
+                <h1 class="logo"><a href="https://gmt-limited.com/">GMT Limited</a></h1>
+                <strong class="slogan">We Make It Happen</strong>
+            </div>
+            <div class="header-box">
+                <ul id="nav">
+                    <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.gmt-limited.com/">Home</a></li>
+                    <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://gmt-limited.com/about-gmt/">About GMT NIGERIA LTD</a></li>
+                    <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://gmt-limited.com/why-gmt/">Why GMT NIGERIA LTD</a></li>
+                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28"><a href="https://gmt-limited.com/services/">Services</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://gmt-limited.com/services/door-to-door/">Door-2-Door</a></li>
+                            <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://gmt-limited.com/services/import-finance/">Import Financing</a></li>
+                            <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://gmt-limited.com/services/project-management/">Project Management</a></li>
+                            <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="https://gmt-limited.com/services/sea-freight/">Barge Marine Solutions</a></li>
+                            <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="https://gmt-limited.com/services/air-freight/">Sea &#038; Air Freight</a></li>
+                            <li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="https://gmt-limited.com/services/warehousing/">Warehousing</a></li>
+                            <li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="https://gmt-limited.com/services/track-trace/">Haggle Free Service</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://gmt-limited.com/contact/">Contact-Careers</a></li>
+                    <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://gmt-limited.com/faq/">FAQ</a></li>
+                    <li id="menu-item-252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252"><a target="_blank" rel="noopener" href="http://query.gmt-limited.com/activity/747506t7827418320836.htm">Track &#038; Trace</a></li>
+                </ul>
+                <form method="get" class="search-form" action="https://gmt-limited.com">
+
+                    <fieldset>
+                        <input id="s" type="text" name="s" value="Search" onblur="if(this.value == '') {this.value = 'Search';}" onfocus="if(this.value == 'Search') {this.value = '';}" />
+                        <input type="submit" value="" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="visual">
+
+
+                <div id="meteor-slideshow" class="meteor-slides  navprevnext">
+
+
+
+                    <ul class="meteor-nav">
+
+                        <li id="meteor-prev" class="prev"><a href="#prev">Previous</a></li>
+
+                        <li id="meteor-next" class="next"><a href="#next">Next</a></li>
+
+                    </ul>
+                    <!-- .meteor-nav -->
+
+
+
+                    <div class="meteor-clip">
+
+
+                        <img style="visibility: hidden;" class="meteor-shim" src="https://gmt-limited.com/wp-content/uploads/2012/11/import-logistics-new.jpg" alt="" />
+                        <div class="mslide mslide-1">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/import-logistics-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="Import Logistics" loading="lazy" title="Import Logistics" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/import-logistics-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/import-logistics-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/import-logistics-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+
+                        <div class="mslide mslide-2">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/special-transport-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="" loading="lazy" title="Special Transport" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/special-transport-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/special-transport-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/special-transport-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+
+                        <div class="mslide mslide-3">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/high-quality-storage-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="" loading="lazy" title="High Quality Storage" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/high-quality-storage-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/high-quality-storage-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/high-quality-storage-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+
+                        <div class="mslide mslide-4">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/care-about-goods-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="" loading="lazy" title="Care About Goods" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/care-about-goods-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/care-about-goods-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/care-about-goods-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+
+                        <div class="mslide mslide-5">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/need-more-time-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="" loading="lazy" title="Need More Time" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/need-more-time-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/need-more-time-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/need-more-time-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+
+                        <div class="mslide mslide-6">
+
+
+                            <img width="960" height="306" src="https://gmt-limited.com/wp-content/uploads/2012/11/airfreight-by-gmt-new.jpg" class="attachment-featured-slide size-featured-slide wp-post-image" alt="" loading="lazy" title="Airfreight By GMT" srcset="https://gmt-limited.com/wp-content/uploads/2012/11/airfreight-by-gmt-new.jpg 960w, https://gmt-limited.com/wp-content/uploads/2012/11/airfreight-by-gmt-new-300x95.jpg 300w, https://gmt-limited.com/wp-content/uploads/2012/11/airfreight-by-gmt-new-250x79.jpg 250w"
+                                sizes="(max-width: 960px) 100vw, 960px" />
+
+                        </div>
+                        <!-- .mslide -->
+
+
+
+                    </div>
+                    <!-- .meteor-clip -->
+
+
+                </div>
+                <!-- .meteor-slides -->
+
+                <!-- <div class="visual-text">
+			<blockquote>
+				<q>For import logistics Nigeria GMT, the only answer to all your logistics needs <img src="https://gmt-limited.com/wp-content/themes/GMT/images/bg-blockquote2.png" width="32" height="24" alt="image description" /></q>
+			</blockquote>
+		</div> -->
+            </div>
+
+            <div class="main-holder">
+                <div id="content">
+                    <div class="entries-block">
+                        <div class="alignleft">
+
+                            <style type="text/css">
+                                .lens-tool-kit a.slidedeck-2-bug {
+                                    display: none;
+                                }
+                            </style>
+
+                            <div id="SlideDeck-75-frame" class="slidedeck-frame slidedeck_frame slidedeck-frame-75 lens-tool-kit show-overlay-never display-nav-never content-source-posts date-format-none sd2-hideSpines sd2-show-link-slide sd2-custom sd2-small sd2-dark default-nav-styles sd2-no-nav sd2-none sd2-nav-default sd2-nav-pos-bottom sd2-title-pos-left sd2-title-dark sd2- sd2-nav-arrow-style-1 sd2-arrowstyle-7"
+                                style="width:230px;height:150px;" data-sd2-lazy-load-padding="1">
+                                <div class="sd-wrapper">
+                                    <dl id="SlideDeck-75" class="slidedeck slidedeck-75" style="width:230px;height:150px;"><dt>GMT solutions: from Logistic Challenges to Competitive Advantages!</dt>
+                                        <dd style="" class="has-image has-excerpt has-title sd2-image-scaling-cover slide-type-image slide-source-posts" data-thumbnail-src="https://gmt-limited.com/wp-content/uploads/2020/11/2020-11-04_10-22-45-150x150.jpg">
+                                            <div class="sd-node-title-box">
+
+
+                                                <div class="slidedeck-vertical-center-outer">
+                                                    <div class="slidedeck-vertical-center-middle">
+                                                        <div class="slidedeck-vertical-center-inner">
+
+
+                                                            <div class="slide-title accent-color">
+                                                                GMT solutions: from Logistic Challenges to Competitive&hellip; </div>
+
+                                                            <div class="slide-meta">
+                                                                <span class="slide-author">
+                            admin                    </span>
+                                                                <span class="slide-date"></span>
+                                                            </div>
+
+                                                            <p class="slide-text">Please read the full article about GMT's newest services in Africa Outlook nr. 86. http://www.afr&hellip;
+                                                                <a href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" class="readmore accent-color" target="_top">Read More</a>
+                                                            </p>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="sd2-slide-background" data-sd2-slide-image="https://gmt-limited.com/wp-content/uploads/2020/11/2020-11-04_10-22-45.jpg">&nbsp;</div>
+                                            <a href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" class="full-slide-link-hit-area" target="_top"></a></dd><dt>Public Notice on Product Authentication Mark – SON Jan 2018</dt>
+                                        <dd
+                                            style="" class="has-image has-excerpt has-title sd2-image-scaling-cover slide-type-image slide-source-posts" data-thumbnail-src="https://gmt-limited.com/wp-content/uploads/2018/02/2018-02-02_11-42-25-150x150.jpg">
+                                            <div class="sd-node-title-box">
+
+
+                                                <div class="slidedeck-vertical-center-outer">
+                                                    <div class="slidedeck-vertical-center-middle">
+                                                        <div class="slidedeck-vertical-center-inner">
+
+
+                                                            <div class="slide-title accent-color">
+                                                                Public Notice on Product Authentication Mark – SON Jan&hellip; </div>
+
+                                                            <div class="slide-meta">
+                                                                <span class="slide-author">
+                            admin                    </span>
+                                                                <span class="slide-date"></span>
+                                                            </div>
+
+                                                            <p class="slide-text">SON issues a Product Authentication Mark on all locally manufactured and imp&hellip;
+                                                                <a href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" class="readmore accent-color" target="_top">Read More</a>
+                                                            </p>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="sd2-slide-background" data-sd2-slide-image="https://gmt-limited.com/wp-content/uploads/2018/02/2018-02-02_11-42-25-300x196.jpg">&nbsp;</div>
+                                            <a href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" class="full-slide-link-hit-area" target="_top"></a></dd><dt>Mandatory Palletization of Cargo</dt>
+                                            <dd style=""
+                                                class="has-image has-excerpt has-title sd2-image-scaling-cover slide-type-image slide-source-posts" data-thumbnail-src="https://gmt-limited.com/wp-content/uploads/2017/12/GettyImages-94107208-568576565f9b586a9e1afab9-150x150.jpg">
+                                                <div class="sd-node-title-box">
+
+
+                                                    <div class="slidedeck-vertical-center-outer">
+                                                        <div class="slidedeck-vertical-center-middle">
+                                                            <div class="slidedeck-vertical-center-inner">
+
+
+                                                                <div class="slide-title accent-color">
+                                                                    Mandatory Palletization of Cargo </div>
+
+                                                                <div class="slide-meta">
+                                                                    <span class="slide-author">
+                            admin                    </span>
+                                                                    <span class="slide-date"></span>
+                                                                </div>
+
+                                                                <p class="slide-text">The Federal Government also has directed all containerized cargoes coming into Nigeria to be on a pa&hellip;
+                                                                    <a href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" class="readmore accent-color" target="_top">Read More</a>
+                                                                </p>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="sd2-slide-background" data-sd2-slide-image="https://gmt-limited.com/wp-content/uploads/2017/12/GettyImages-94107208-568576565f9b586a9e1afab9.jpg">&nbsp;</div>
+                                                <a href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" class="full-slide-link-hit-area" target="_top"></a></dd>
+                                    </dl>
+                                    <div class="slidedeck-overlays" data-for="SlideDeck-75"><a href="#slidedeck-overlays" class="slidedeck-overlays-showhide">Overlays<span class="open-icon"></span><span class="close-icon"></span></a><span class="slidedeck-overlays-wrapper"><a href="http://www.facebook.com/sharer.php?u=https://gmt-limited.com/#SlideDeck-75&t=Images" target="_blank" class="slidedeck-overlay slidedeck-overlay-type-facebook slidedeck-overlay-1" data-popup-width="659" data-popup-height="592" data-type="facebook"><span class="slidedeck-overlay-logo"></span>
+                                        <span
+                                            class="slidedeck-overlay-label">Share</span>
+                                            </a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgmt-limited.com%2F%23SlideDeck-75&via=slidedeck&related=slidedeck&text=Check+out+this+SlideDeck%21" target="_blank" class="slidedeck-overlay slidedeck-overlay-type-twitter slidedeck-overlay-2"
+                                                data-popup-width="466" data-popup-height="484" data-type="twitter"><span class="slidedeck-overlay-logo"></span><span class="slidedeck-overlay-label">Tweet</span></a></span>
+                                    </div><a class="deck-navigation horizontal prev" href="#prev-horizontal"><span>Previous</span></a><a class="deck-navigation horizontal next" href="#next-horizontal"><span>Next</span></a><a class="deck-navigation vertical prev"
+                                        href="#prev-vertical"><span>Previous</span></a><a class="deck-navigation vertical next" href="#next-vertical"><span>Next</span></a></div>
+                            </div>
+                            <div id="SlideDeck-171-frame" class="slidedeck-frame slidedeck_frame slidedeck-frame-171 lens-tool-kit show-overlay-never display-nav-never content-source-posts date-format-none sd2-hideSpines sd2-show-link-slide sd2-show-title sd2-custom sd2-small sd2-dark default-nav-styles sd2-no-nav sd2-none sd2-nav-default sd2-nav-pos-bottom sd2-title-pos-top sd2-title-dark sd2-1 sd2-nav-arrow-style-1 sd2-arrowstyle-7"
+                                style="width:230px;height:91px;" data-sd2-lazy-load-padding="1">
+                                <div class="sd-wrapper">
+                                    <dl id="SlideDeck-171" class="slidedeck slidedeck-171" style="width:230px;height:91px;"><dt>GMT solutions: from Logistic Challenges to Competitive Advantages!</dt>
+                                        <dd style="" class="no-image has-excerpt has-title sd2-image-scaling-cover slide-type-textonly slide-source-posts" data-thumbnail-src="">
+                                            <div class="sd-node-title-box">
+
+
+                                                <div class="slidedeck-vertical-center-outer">
+                                                    <div class="slidedeck-vertical-center-middle">
+                                                        <div class="slidedeck-vertical-center-inner">
+
+
+                                                            <div class="slide-title accent-color">
+                                                                <a class="accent-color" href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" target="_top">            GMT solutions: from Logistic Challe&hellip;        </a>                                                                </div>
+
+                                                            <div class="slide-meta">
+                                                                <span class="slide-author">
+                            admin                    </span>
+                                                                <span class="slide-date"></span>
+                                                            </div>
+
+                                                            <p class="slide-text">Please read the full article about GMT's newest services in Africa Outlook nr. 86. http://www.africaoutlookmag.com/company-profiles/1301-gmt-nigeria/reader &nbsp;&hellip;
+                                                                <a href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" class="readmore accent-color" target="_top">Read More</a>
+                                                            </p>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <a href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" class="full-slide-link-hit-area" target="_top"></a></dd><dt>Public Notice on Product Authentication Mark – SON Jan 2018</dt>
+                                        <dd
+                                            style="" class="no-image has-excerpt has-title sd2-image-scaling-cover slide-type-textonly slide-source-posts" data-thumbnail-src="">
+                                            <div class="sd-node-title-box">
+
+
+                                                <div class="slidedeck-vertical-center-outer">
+                                                    <div class="slidedeck-vertical-center-middle">
+                                                        <div class="slidedeck-vertical-center-inner">
+
+
+                                                            <div class="slide-title accent-color">
+                                                                <a class="accent-color" href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" target="_top">            Public Notice on Product Authentica&hellip;        </a>                                                                </div>
+
+                                                            <div class="slide-meta">
+                                                                <span class="slide-author">
+                            admin                    </span>
+                                                                <span class="slide-date"></span>
+                                                            </div>
+
+                                                            <p class="slide-text">SON issues a Product Authentication Mark on all locally manufactured and imported products into Nigeria from beginning of the second quarter of 2018 &n&hellip;
+                                                                <a href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" class="readmore accent-color" target="_top">Read More</a>
+                                                            </p>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <a href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" class="full-slide-link-hit-area" target="_top"></a></dd><dt>Mandatory Palletization of Cargo</dt>
+                                            <dd style=""
+                                                class="no-image has-excerpt has-title sd2-image-scaling-cover slide-type-textonly slide-source-posts" data-thumbnail-src="">
+                                                <div class="sd-node-title-box">
+
+
+                                                    <div class="slidedeck-vertical-center-outer">
+                                                        <div class="slidedeck-vertical-center-middle">
+                                                            <div class="slidedeck-vertical-center-inner">
+
+
+                                                                <div class="slide-title accent-color">
+                                                                    <a class="accent-color" href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" target="_top">            Mandatory Palletization of Cargo        </a> </div>
+
+                                                                <div class="slide-meta">
+                                                                    <span class="slide-author">
+                            admin                    </span>
+                                                                    <span class="slide-date"></span>
+                                                                </div>
+
+                                                                <p class="slide-text">The Federal Government also has directed all containerized cargoes coming into Nigeria to be on a pallet. The new guideline is applicable for all Nigerian-bound cargo departing from various
+                                                                    origin por&hellip;
+                                                                    <a href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" class="readmore accent-color" target="_top">Read More</a>
+                                                                </p>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <a href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" class="full-slide-link-hit-area" target="_top"></a></dd>
+                                    </dl>
+                                    <div class="slidedeck-overlays" data-for="SlideDeck-171"><a href="#slidedeck-overlays" class="slidedeck-overlays-showhide">Overlays<span class="open-icon"></span><span class="close-icon"></span></a><span class="slidedeck-overlays-wrapper"><a href="http://www.facebook.com/sharer.php?u=https://gmt-limited.com/#SlideDeck-171&t=Titles" target="_blank" class="slidedeck-overlay slidedeck-overlay-type-facebook slidedeck-overlay-1" data-popup-width="659" data-popup-height="592" data-type="facebook"><span class="slidedeck-overlay-logo"></span>
+                                        <span
+                                            class="slidedeck-overlay-label">Share</span>
+                                            </a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgmt-limited.com%2F%23SlideDeck-171&via=slidedeck&related=slidedeck&text=Check+out+this+SlideDeck%21" target="_blank" class="slidedeck-overlay slidedeck-overlay-type-twitter slidedeck-overlay-2"
+                                                data-popup-width="466" data-popup-height="484" data-type="twitter"><span class="slidedeck-overlay-logo"></span><span class="slidedeck-overlay-label">Tweet</span></a></span>
+                                    </div><a class="deck-navigation horizontal prev" href="#prev-horizontal"><span>Previous</span></a><a class="deck-navigation horizontal next" href="#next-horizontal"><span>Next</span></a><a class="deck-navigation vertical prev"
+                                        href="#prev-vertical"><span>Previous</span></a><a class="deck-navigation vertical next" href="#next-vertical"><span>Next</span></a></div>
+                            </div>
+                        </div>
+                        <div class="entries-text">
+                            <h2>Latest Entries</h2>
+                            <ul>
+
+
+
+                                <li>
+                                    <em class="date">November 4th, 2020</em>
+                                    <h3><a href="https://gmt-limited.com/news/gmt-solutions-from-logistic-challenges-to-competitive-advantages/" rel="bookmark" title="GMT solutions: from Logistic Challenges to Competitive Advantages!">GMT solutions: from Logistic Challenges to Competitive Advantages!</a></h3>
+                                    <p>Please read the full article about GMT&#8217;s newest services in Africa Outlook nr. 86. ...</p>
+                                </li>
+
+
+                                <li>
+                                    <em class="date">February 2nd, 2018</em>
+                                    <h3><a href="https://gmt-limited.com/news/public-notice-on-product-authentication-mark-son-jan-2018/" rel="bookmark" title="Public Notice on Product Authentication Mark – SON Jan 2018">Public Notice on Product Authentication Mark – SON Jan 2018</a></h3>
+                                    <p>SON issues a Product Authentication Mark on all locally manufactured and imported products into ...</p>
+                                </li>
+
+
+                                <li>
+                                    <em class="date">December 7th, 2017</em>
+                                    <h3><a href="https://gmt-limited.com/news/mandatory-palletization-of-cargo/" rel="bookmark" title="Mandatory Palletization of Cargo">Mandatory Palletization of Cargo</a></h3>
+                                    <p>The Federal Government also has directed all containerized cargoes coming into Nigeria to be on ...</p>
+                                </li>
+
+                                <br>&nbsp;
+                                <a href="https://gmt-limited.com/news/"><b>Read More News</b></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-section">
+                        <img src="https://gmt-limited.com/wp-content/themes/GMT/images/about-gmt-small.jpg" class="alignleft" width="248" height="168" alt="image description" />
+                        <div class="section-text">
+                            <h2>About GMT</h2>
+                            <p>GMT Nigeria Ltd. was established in 1999. Since our inception we have grown into the largest inbound logistics service provider in Sub Saharan Africa. GMT offers Clients a world-class integrated logistics service that spans
+                                across the supply chain transforming logistics challenges into competitive advantages, we provide customized solutions to meet any logistics demand when importing <a href="https://gmt-limited.com/about-gmt/">Read the rest &#8230;</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="sidebar">
+                    <div class="updates-block">
+                        <ul>
+                            <li>
+                            </li>
+
+                        </ul>
+
+
+                        <h2>RECEIVE LATEST UPDATES</h2>
+                        <div class="side-box">
+                            Want to stay up to date with what's going on around here? <br><br>
+                            <a href="http://eepurl.com/sGxmz" target="_blank">
+							<img src="https://www.gmt-limited.com/wp-content/uploads/2013/01/updates.jpg" alt="Click here for exclusive customer only updates">
+						</a>
+                            <br><br>
+                        </div>
+
+                    </div>
+                    <div class="side-box">
+                        <div class="title">
+                            <img src="https://gmt-limited.com/wp-content/themes/GMT/images/ico1.gif" width="24" height="24" alt="image description" />
+                            <h2>Delicious Connection</h2>
+                        </div>
+                        <ul>
+
+                            No items in the feed </ul>
+                    </div>
+                    <div class="side-box rss">
+                        <div class="title">
+                            <img src="https://gmt-limited.com/wp-content/themes/GMT/images/ico2.gif" width="47" height="41" alt="image description" />
+                            <h2>Selected for you</h2>
+                        </div>
+                        <ul>
+
+                            No items in the feed </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <ul class="nav">
+                <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://www.gmt-limited.com/">Home</a></li>
+                <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-17"><a href="https://gmt-limited.com/about-gmt/" aria-current="page">About GMT NIGERIA LTD</a></li>
+                <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://gmt-limited.com/why-gmt/">Why GMT NIGERIA LTD</a></li>
+                <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://gmt-limited.com/services/">Services</a></li>
+                <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://gmt-limited.com/contact/">Contact-Careers</a></li>
+                <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://gmt-limited.com/faq/">FAQ</a></li>
+                <li id="menu-item-253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-253"><a target="_blank" rel="noopener" href="http://query.gmt-limited.com/activity/747506t7827418320836.htm">Track &#038; Trace</a></li>
+            </ul>
+            <p> Copyright &copy; 2010-2021 GMT (Nig.) Limited. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        /* <![CDATA[ */
+        jQuery.noConflict();
+        jQuery(document).ready(function($) {
+            $(function() {
+                $("a[rel^='wp_lightbox_prettyPhoto']").prettyPhoto({
+                    animation_speed: 'fast',
+                    slideshow: false,
+                    autoplay_slideshow: false,
+                    opacity: 0.80,
+                    show_title: false,
+                    allow_resize: true,
+                    default_width: 500,
+                    default_height: 344,
+                    counter_separator_label: '/',
+                    theme: 'dark_rounded',
+                    hideflash: false,
+                    wmode: 'opaque',
+                    autoplay: false,
+                    modal: false,
+                    overlay_gallery: true,
+                    keyboard_shortcuts: true,
+                    changepicturecallback: function() {},
+                    callback: function() {},
+                    markup: '<div class="pp_pic_holder"> \
+				<div class="ppt">&nbsp;</div> \
+				<div class="pp_top"> \
+					<div class="pp_left"></div> \
+					<div class="pp_middle"></div> \
+					<div class="pp_right"></div> \
+				</div> \
+				<div class="pp_content_container"> \
+					<div class="pp_left"> \
+					<div class="pp_right"> \
+						<div class="pp_content"> \
+							<div class="pp_loaderIcon"></div> \
+							<div class="pp_fade"> \
+								<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+								<div class="pp_hoverContainer"> \
+									<a class="pp_next" href="#">next</a> \
+									<a class="pp_previous" href="#">previous</a> \
+								</div> \
+								<div id="pp_full_res"></div> \
+								<div class="pp_details clearfix"> \
+									<p class="pp_description"></p> \
+									<a class="pp_close" href="#">Close</a> \
+									<div class="pp_nav"> \
+										<a href="#" class="pp_arrow_previous">Previous</a> \
+										<p class="currentTextHolder">0/0</p> \
+										<a href="#" class="pp_arrow_next">Next</a> \
+									</div> \
+								</div> \
+							</div> \
+						</div> \
+					</div> \
+					</div> \
+				</div> \
+				<div class="pp_bottom"> \
+					<div class="pp_left"></div> \
+					<div class="pp_middle"></div> \
+					<div class="pp_right"></div> \
+				</div> \
+			</div> \
+			<div class="pp_overlay"></div>',
+                    gallery_markup: '<div class="pp_gallery"> \
+						<a href="#" class="pp_arrow_previous">Previous</a> \
+						<ul> \
+							{gallery} \
+						</ul> \
+						<a href="#" class="pp_arrow_next">Next</a> \
+					</div>',
+                    image_markup: '<img id="fullResImage" src="" />',
+                    flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
+                    quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
+                    iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
+                    inline_markup: '<div class="pp_inline clearfix">{content}</div>',
+                    custom_markup: ''
+                });
+            });
+        });
+        /* ]]> */
+    </script>
+    <link rel='stylesheet' id='slidedeck-lens-tool-kit-css' href='https://gmt-limited.com/wp-content/plugins/slidedeck2/lenses/tool-kit/lens.css?ver=2.3.10' type='text/css' media='all' />
+    <script type='text/javascript' src='https://gmt-limited.com/wp-includes/js/comment-reply.js?ver=5.9.7' id='comment-reply-js'></script>
+    <script type="text/javascript">
+        var slideDeck2URLPath = "https://gmt-limited.com/wp-content/plugins/slidedeck2";
+        var slideDeck2iframeByDefault = false;
+    </script>
+    <script type="text/javascript">
+        jQuery("#SlideDeck-75").slidedeck({
+            "activeCorner": false,
+            "hideSpines": true,
+            "keys": true,
+            "scroll": false,
+            "touch": true,
+            "continueScrolling": false,
+            "touchThreshold": {
+                "x": 69,
+                "y": 45
+            },
+            "start": 1,
+            "autoPlay": true,
+            "autoPlayInterval": 5000,
+            "cycle": true,
+            "slideTransition": "slide",
+            "speed": 500,
+            "transition": "swing",
+            "index": true
+        }).vertical({
+            "speed": 500,
+            "scroll": "",
+            "continueScrolling": false
+        });
+    </script>
+    <script type="text/javascript" src="https://gmt-limited.com/wp-content/plugins/slidedeck2/lenses/tool-kit/lens.js"></script>
+    <script type="text/javascript">
+        jQuery("#SlideDeck-171").slidedeck({
+            "activeCorner": false,
+            "hideSpines": true,
+            "keys": true,
+            "scroll": false,
+            "touch": false,
+            "continueScrolling": false,
+            "touchThreshold": {
+                "x": 69,
+                "y": 27
+            },
+            "start": 1,
+            "autoPlay": true,
+            "autoPlayInterval": 5000,
+            "cycle": true,
+            "slideTransition": "slide",
+            "speed": 500,
+            "transition": "swing",
+            "index": true
+        }).vertical({
+            "speed": 500,
+            "scroll": "",
+            "continueScrolling": false
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" media="all" />
+    <style type="text/css" id="slidedeck-footer-styles">
+        #SlideDeck-75 {
+            font-family: sans-serif;
+        }
+
+        #SlideDeck-75 .slide-title,
+        #SlideDeck-75-frame .sd2-custom-title-font,
+        #SlideDeck-75 .sd2-slide-title {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #SlideDeck-75-frame .accent-color {
+            color: #3ea0c1
+        }
+
+        #SlideDeck-75-frame .accent-color-background {
+            background-color: #3ea0c1
+        }
+
+        #SlideDeck-171 {
+            font-family: sans-serif;
+        }
+
+        #SlideDeck-171 .slide-title,
+        #SlideDeck-171-frame .sd2-custom-title-font,
+        #SlideDeck-171 .sd2-slide-title {
+            font-family: Muli, sans-serif;
+            font-weight: 400;
+        }
+
+        #SlideDeck-171-frame .accent-color {
+            color: #631d16
+        }
+
+        #SlideDeck-171-frame .accent-color-background {
+            background-color: #631d16
+        }
+    </style>
+</body>
+
+</html>

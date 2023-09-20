@@ -1,0 +1,15 @@
+/*
+This is the custom css file for Lightbox Ultimate Plugin. You can add your custom styling for this plugin here
+*/
+
+/* The following CSS class will add styling to all the lightbox shortcode anchors */
+
+.lightbox_ultimate_anchor {}
+
+/* The following CSS class will add styling to the lightbox shortcodes with the "anchor text" only*/
+
+.lightbox_ultimate_text_anchor {}
+
+/* The following CSS class will add styling to the lightbox shortcodes with the "anchor image" only */
+
+.lightbox_ultimate_image_anchor {}

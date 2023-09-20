@@ -1,0 +1,28 @@
+.wp_lightbox_error_message {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lightbox_ultimate_fp_overlay {
+    display: none;
+    padding: 15px;
+    width: 640px;
+    background-color: #fff;
+}
+
+.close {
+    background: url(../../images/flowplayer/close.png) no-repeat;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+a.player {
+    height: 450px;
+    display: block;
+}
